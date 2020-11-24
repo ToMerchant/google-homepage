@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<style>
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
+
+.mid-container-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    padding-bottom: 20px;
+
+
+}
+.mid-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: left; 
+    justify-content: left;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 500px;
+    margin-left:auto;
+    margin-right: auto;
+
+
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 24px;
+    
+}
+.mid-container-2:hover{
+    -webkit-box-shadow: 0px 0px 0px 0.2px rgba(189, 187, 187, 0.75);
+  -moz-box-shadow: 0px 0px 0px 0.2px rgba(189, 187, 187, 0.75);
+  box-shadow: 0px 0px 2px 0.2px rgba(189, 187, 187, 0.75);
+  
+    
+}
+input{
+    width: 460px;
+    border: none;
+    
+    
+}
+form{
+    cursor: text;
+   
+    
+}
+
+
+.mid-container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.mid-flex-3:hover{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-image: linear-gradient(top,#f8f9fa,#f8f9fa);
+background-color: #f8f9fa;
+border: 1px solid #dadce0;
+color: #202124;
+       
+}
+.mid-flex-1{
+   
+}
+
+.mid-flex-2{
+    
+    
+    
+}
+.mid-flex-3{
+    margin: 10px;
+    background-color:#f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+} 
+ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  
+}
+footer{
+    
+    position: fixed; 
+    bottom: 0;
+    right:0;
+    position: absolute;
+    left:0;
+    background: #f2f2f2;
+    line-height: 40px;
+    border-top: 1px solid #dadce0;
+    font-family: arial,sans-serif;
+    
+}
+.a-b{
+  color: #70757a;
+  text-decoration: none;
+  padding-right:10px;
+  padding-left:10px;
+  font-size:14px;
+  
+}
+.a-b:hover{
+    text-decoration:underline;
+}
+.a-t{
+    font-size: small;
+    color: rgba(0,0,0,0.87);
+    font-family: arial,sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.a-t:hover{
+    text-decoration:underline;
+}
+
+.span-1{
+    float: left;
+
+    
+}
+.span-2{
+   float: right;
+
+}
+.span-h1{
+    float: left;
+
+    
+}
+.span-h2{
+   float: right;
+
+}
+header{
+    
+    position: fixed; 
+    top: 0;
+    right:0;
+    position: absolute;
+    left:0;
+    
+    line-height: 40px;
+    font-size: small;
+    color: rgba(0,0,0,0.87);
+    font-family: arial,sans-serif;
+    padding-top: 10px;
+    
+    
+}
+#sign{
+    color: #fff;
+    cursor: default;
+text-decoration: none;
+border: 1px solid #4285f4;
+font-weight: bold;
+outline: none;
+background: -moz-linear-gradient(top,#4387fd,#4683ea);
+display: inline-block;
+line-height: 28px;
+padding: 0 12px;
+border-radius: 2px;
+font-family: arial,sans-serif;
+font-size: 13px;
+white-space: nowrap;
+margin-right:20px;
+
+
+
+
+}
+#dots{
+
+height;10px;
+line-height: 28px;
+padding: 0 12px;
+
+background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+background-size: 528px 68px;
+background-position: -132px -38px;
+opacity: .55;
+color: #000;
+cursor: pointer;
+text-decoration: none;
+
+display: inline-block;
+outline: none;
+vertical-align: middle;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+height: 30px;
+width: 30px;
+
+padding-right:35px;
+padding-left:10px;
+
+}
+#dots:hover{
+    opacity: .85;
+}
+</style>
+
+
+<html>
+
+<header>
+
+    <span class="span-h1">
+        <ul>
+            <li><a class="a-t" href="https://aabout.google/">About</a></li>
+            <li><a class="a-t" href="https://store.google.com/">Store</a></li>
+            
+          </ul> 
+    </span>
+    
+    <span class="span-h2">
+       
+          <ul>
+            <li><a class="a-t" href="https://mail.google.com/mail">Gmail</a></li>
+            <li><a class="a-t" href="https://www.google.com/imghp">Images</a></li>
+            <li><a id="dots" href="https://about.google/intl"></a></li>
+            <li><a id="sign" href="https://accounts.google.com/">Sign in</a></li>
+          </ul>
+    </span>
+
+</header>
+
+
+  
+<div class="mid-container-1">
+<img class="mid-flex-1" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+</div>
+
+
+<div class="mid-container-2">
+
+    
+    <svg  focusable="false" xmlns="http://www.w3.org/2000/svg" fill="#9aa0a6" viewBox="0px 0px 24px 24px"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+    
+<form >  
+    <input type="text" >
+</form>
+
+</div>
+
+
+<div class="mid-container-3">
+    <button class="mid-flex-3">Google Search</button>
+    <button class="mid-flex-3">I'm Feeling Lucky</button>
+</div>
+
+
+
+
+<footer>
+
+<span claSS="span-1">
+    <ul>
+        <li><a class="a-b" href="https://ads.google.com/intl/en_au/home">Advertising</a></li>
+        <li><a class="a-b" href="https://www.google.com/services">Business</a></li>
+        <li><a class="a-b" href="https://www.google.com/search/howsearchworks/">How Search Works</a></li>
+      </ul> 
+</span>
+
+<span class="span-2">
+   
+      <ul>
+        <li><a class="a-b" href="https://policies.google.com/privacy">Privacy</a></li>
+        <li><a class="a-b" href="https://policies.google.com/terms">Terms</a></li>
+        <li><a class="a-b" href="https://www.google.com/preferences">Settings</a></li>
+      </ul>
+</span>
+
+</footer>
+
+</html>
